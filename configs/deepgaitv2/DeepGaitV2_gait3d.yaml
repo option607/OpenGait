@@ -1,8 +1,8 @@
 data_cfg:
   dataset_name: Gait3D
-  dataset_root: your_path
+  dataset_root: /media/data/qinxiaohuan/Gait3D-Parsing/Gait3D-parsing-64-64-pkl
   dataset_partition: ./datasets/Gait3D/Gait3D.json
-  num_workers: 1
+  num_workers: 4
   remove_no_gallery: false # Remove probe if no gallery for it
   test_dataset_name: Gait3D
 

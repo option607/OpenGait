@@ -30,3 +30,6 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 o
 
 # GaitGL
 # CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 opengait/main.py --cfgs ./configs/gaitgl/gaitgl_OUMVLP.yaml --phase train
+
+# # **************** For Gait3D ****************
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 opengait/main.py --cfgs /media/data/qinxiaohuan/OpenGait/configs/skeletongait/skeletongait_Gait3D.yaml --phase train
